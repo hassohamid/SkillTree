@@ -1,13 +1,9 @@
-function App() {
+import AppLayout from "./layouts/AppLayout";
+
+export default function App() {
   return (
     <>
-      <div className="flex items-center justify-center h-screen">
-        <h1 className="text-4xl tracking-tighter text-muted-foreground">
-          SkillTree
-        </h1>
-      </div>
+      <AppLayout></AppLayout>
     </>
   );
 }
-
-export default App;
