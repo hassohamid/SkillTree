@@ -10,7 +10,7 @@ export default function Navbar() {
             alt="Logo"
             className="sm:w-33 w-30 border-r  p-2 "
           />
-          <h1 className="font-bold text-[13px] ">The AI Path</h1>
+          <h1 className="font-bold text-[13px] sm:text-sm ">The AI Path</h1>
         </div>
         <RainbowButton className="text-xs sm:text-sm rounded-full">
           {" "}
