@@ -34,7 +34,7 @@ export default function Navbar() {
       >
         <div className="flex items-center gap-2   ">
           <img src="skilltree.png" alt="Logo" className="w-28  " />
-          <h1 className="hidden border-l border-gray-300 px-2 sm:block font-bold text-[13px] sm:text-sm ">
+          <h1 className="hidden border-l border-gray-300 px-2 py-0.5 sm:block font-bold text-[13px] sm:text-sm ">
             The AI Path
           </h1>
         </div>
