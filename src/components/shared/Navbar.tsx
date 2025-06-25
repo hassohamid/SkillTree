@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex justify-center w-full max-w-4xl mx-auto  blur-3xl opacity-25 sm:opacity-15 lg:opacity-20 absolute left-1/2 -translate-x-1/2 -translate-y-1/2  rounded-full pointer-events-none z-50">
+      <div className="flex justify-center w-full max-w-4xl mx-auto  blur-3xl opacity-25 sm:opacity-15 lg:opacity-20 absolute left-1/2 -translate-x-1/2 -translate-y-1/2  rounded-full pointer-events-none -z-50">
         <div className="bg-pink-400 h-20 sm:h-40 md:h-60 w-1/4"></div>
         <div className="bg-yellow-400 h-20 sm:h-40 md:h-60 w-1/4"></div>
         <div className="bg-purple-400 h-20 sm:h-40 md:h-60 w-1/4"></div>
