@@ -13,7 +13,7 @@ export default function Hero() {
         guessing and start learning.
       </p>
       <div className="relative flex flex-col gap-2">
-        <RainbowButton className="mx-auto rounded-full py-5 px-10 mt-5 ">
+        <RainbowButton className="mx-auto rounded-full py-5 px-15 mt-5 font-bold ">
           Generate Your Skilltree
         </RainbowButton>
         <p className="text-xs  text-center text-foreground/70 tracking-tighter font-medium">
