@@ -2,7 +2,7 @@ import { RainbowButton } from "../magicui/rainbow-button";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto flex max-w-6xl flex-col justify-center sm:text-center mt-30 gap-3">
+    <div className="container mx-auto flex max-w-6xl flex-col justify-center sm:text-center mt-10 sm:mt-25 gap-3">
       <h1 className="  py-4 text-5xl font-semibold tracking-tight text-balance md:text-7xl lg:mt-16  bg-gradient-to-br from-neutral-950 from-20% to-neutral-500 bg-clip-text text-transparent  pl-8 lg:pl-0 ">
         Turn your goals into a visual map instantly
         <span className="text-green-300">.</span>
@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="absolute h-45 w-45 bg-blue-400 left-1/2 -translate-x-1/2  opacity-25 top-10  rounded-full pointer-events-none blur-3xl"></div>
       </div>
       <div className="relative flex justify-end items-center ">
-        <div className="bg-gradient-to-t from-orange-300 to-pink-400 to-95% absolute h-[200px] w-full  blur-3xl rounded-t-full top-30 opacity-80  "></div>
+        <div className="bg-gradient-to-t from-orange-300 to-pink-400 to-95% absolute h-[200px] w-full  blur-3xl rounded-t-full top-30 opacity-50  "></div>
       </div>
     </div>
   );
