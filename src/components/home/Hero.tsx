@@ -2,12 +2,12 @@ import { RainbowButton } from "../magicui/rainbow-button";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto flex max-w-6xl flex-col justify-center sm:text-center mt-30 gap-3 ">
-      <h1 className="  py-4 text-5xl font-semibold tracking-tight text-balance md:text-7xl lg:mt-16  bg-gradient-to-br from-neutral-950 from-20% to-neutral-500 bg-clip-text text-transparent dark:from-white dark:from-20% dark:to-neutral-800 pl-8 lg:pl-0 ">
+    <div className="container mx-auto flex max-w-6xl flex-col justify-center sm:text-center mt-30 gap-3">
+      <h1 className="  py-4 text-5xl font-semibold tracking-tight text-balance md:text-7xl lg:mt-16  bg-gradient-to-br from-neutral-950 from-20% to-neutral-500 bg-clip-text text-transparent  pl-8 lg:pl-0 ">
         Turn your goals into a visual map instantly
         <span className="text-green-300">.</span>
       </h1>
-      <p className="text-balance tracking-tight leading-relaxed pl-8 md:pl-0  mx-auto max-w-xl text-md md:text-lg md:max-w-full  ">
+      <p className="text-balance tracking-tight leading-relaxed pl-8 md:pl-0   text-md md:text-lg md:max-w-full  ">
         Wasting hours jumping between YouTube videos and docs? Skilltree gives
         you a custom, game-like roadmap built around your goals—so you stop
         guessing and start learning.
@@ -20,6 +20,9 @@ export default function Hero() {
           Try for free. No credit card required.
         </p>
         <div className="absolute h-45 w-45 bg-blue-400 left-1/2 -translate-x-1/2  opacity-25 top-10  rounded-full pointer-events-none blur-3xl"></div>
+      </div>
+      <div className="relative flex justify-end items-center ">
+        <div className="bg-gradient-to-t from-orange-300 to-pink-400 to-95% absolute h-[200px] w-full  blur-3xl rounded-t-full top-30 opacity-80  "></div>
       </div>
     </div>
   );
