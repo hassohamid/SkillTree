@@ -7,7 +7,6 @@ export default function App() {
       <AppLayout>
         <Hero />
         <div className="h-screen"></div>
-        <div className="h-screen bg-black"></div>
       </AppLayout>
     </>
   );
