@@ -7,9 +7,9 @@ export default function Hero() {
         Turn your goals into a visual map instantly
         <span className="text-green-300">.</span>
       </h1>
-      <p className="text-balance tracking-tight leading-relaxed pl-8 md:pl-0   text-md md:text-lg md:max-w-full  ">
+      <p className="text-balance tracking-tight leading-relaxed pl-8 md:pl-0   text-sm md:text-lg md:max-w-full  ">
         Wasting hours jumping between YouTube videos and docs? Skilltree gives
-        you a custom, game-like roadmap built around your goals—so you stop
+        you a custom, precise roadmap built around your goals so you stop
         guessing and start learning.
       </p>
       <div className="relative flex flex-col gap-2">
