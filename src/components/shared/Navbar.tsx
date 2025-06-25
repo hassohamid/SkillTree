@@ -29,7 +29,7 @@ export default function Navbar() {
       <header
         className={cn(
           " sticky h-20 z-20  transition-all duration-300 bg-transparent   ",
-          scrolled ? "top-5 px-6" : "top-0"
+          scrolled ? "top-5 px-6" : "top-0 border-0"
         )}
       >
         <div
@@ -37,7 +37,7 @@ export default function Navbar() {
             "flex justify-between container mx-auto  transition-all duration-600 rounded-2xl  ",
             scrolled
               ? "bg-background/75 backdrop-blur-lg shadow-lg max-w-5xl py-4 px-5 border-1 "
-              : "bg-background max-w-7xl py-4 px-8"
+              : "bg-background max-w-7xl py-4 px-8 border-0 shadow-none backdrop-blur-none "
           )}
         >
           <div className="flex items-center gap-2  ">
