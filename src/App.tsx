@@ -6,7 +6,7 @@ export default function App() {
     <>
       <AppLayout>
         <Home />
-        <div className="h-screen"></div>
+        {/* <div className="h-[600px] bg-gradient-to-t from-neutral-600 to-white from-55%"></div> */}
       </AppLayout>
     </>
   );
