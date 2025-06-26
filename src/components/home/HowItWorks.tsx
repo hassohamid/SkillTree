@@ -20,10 +20,10 @@ export default function HowItWorks() {
         {" "}
         Process{" "}
       </h1>
-      <h1 className="font-bold tracking-tighter text-3xl sm:text-4xl  text-center text-balance mb-4">
+      <h1 className="font-bold tracking-tighter text-4xl  text-center text-balance mb-4">
         {" "}
         Everything you need to get started is{" "}
-        <Badge className="text-lime-500 bg-neutral-950 text-2xl sm:text-3xl py-0 pr-3 font-extrabold">
+        <Badge className="text-lime-500 bg-neutral-950 text-3xl text-center pr-3 font-extrabold">
           1
         </Badge>{" "}
         prompt{" "}
@@ -32,7 +32,7 @@ export default function HowItWorks() {
         {" "}
         Mastering something has never been easier.
       </p>
-      <Card className="w-full relative mt-5 shadow-xl   ">
+      <Card className="w-full relative mt-5 shadow-xl bg-neutral-100/30 ">
         <div
           className="relative flex  w-full items-center justify-between max-w-full px-8"
           ref={containerRef}
@@ -95,8 +95,8 @@ export default function HowItWorks() {
             toRef={aiRef}
             duration={10}
             delay={2}
-            gradientStartColor="white"
-            gradientStopColor="white"
+            gradientStartColor="blue"
+            gradientStopColor="blue"
             pathWidth={4}
           />
 
