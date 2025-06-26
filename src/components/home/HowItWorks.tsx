@@ -75,8 +75,8 @@ export default function HowItWorks() {
           containerRef={containerRef}
           fromRef={userRef}
           toRef={aiRef}
-          duration={2}
-          pathColor="purple"
+          duration={10}
+          delay={2}
           gradientStartColor="white"
           gradientStopColor="white"
           pathWidth={4}
@@ -87,6 +87,7 @@ export default function HowItWorks() {
           fromRef={aiRef}
           toRef={output1Ref}
           duration={2}
+          delay={3}
           gradientStartColor="white"
           gradientStopColor="white"
         />
@@ -95,6 +96,7 @@ export default function HowItWorks() {
           fromRef={aiRef}
           toRef={output2Ref}
           duration={2}
+          delay={3}
           gradientStartColor="white"
           gradientStopColor="white"
         />
@@ -103,6 +105,7 @@ export default function HowItWorks() {
           fromRef={aiRef}
           toRef={output3Ref}
           duration={2}
+          delay={3}
           gradientStartColor="white"
           gradientStopColor="white"
         />
@@ -111,6 +114,7 @@ export default function HowItWorks() {
           fromRef={aiRef}
           toRef={output4Ref}
           duration={2}
+          delay={3}
           gradientStartColor="white"
           gradientStopColor="white"
         />
