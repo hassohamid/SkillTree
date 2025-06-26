@@ -15,7 +15,7 @@ export default function HowItWorks() {
   const output4Ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div className=" flex flex-col items-center justify-center  py-10 px-3  mx-auto  mt-40 relative max-w-4xl">
+    <div className=" flex flex-col items-center justify-center  py-10 px-3  mx-auto  mt-40 relative max-w-4xl overflow-hidden">
       <h1 className="text-muted-foreground uppercase tracking-wider font-medium text-sm mb-5">
         {" "}
         Process{" "}
