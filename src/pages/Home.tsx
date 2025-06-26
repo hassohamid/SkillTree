@@ -8,6 +8,7 @@ export default function Home() {
       <Hero />
       <Preview />
       <HowItWorks />
+      <div className="h-screen bg-gradient-to-b from-neutral-300 to-white"></div>
     </>
   );
 }

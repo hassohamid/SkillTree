@@ -21,9 +21,9 @@ export default function Hero() {
         </p>
         <div className="absolute h-45 w-45 bg-blue-400 left-1/2 -translate-x-1/2  opacity-25 top-10  rounded-full pointer-events-none blur-3xl"></div>
       </div>
-      {/* <div className="relative flex justify-end items-center ">
-        <div className="bg-gradient-to-t from-orange-300 to-pink-400 to-95% absolute h-[200px] w-full  blur-3xl rounded-t-full top-30 opacity-50  "></div>
-      </div> */}
+      <div className="relative flex justify-end items-center ">
+        <div className="bg-gradient-to-t from-orange-300 to-pink-400 to-95% absolute h-[200px] w-full  blur-3xl rounded-t-full top-70  opacity-50  "></div>
+      </div>
     </div>
   );
 }

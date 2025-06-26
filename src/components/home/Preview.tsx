@@ -7,10 +7,10 @@ export default function Preview() {
         Preview
       </h1>
       <HeroVideoDialog
-        className="block "
+        className="block  "
         animationStyle="from-center"
         videoSrc="https://www.youtube.com/embed/ARYM9ebZ6r8"
-        thumbnailSrc="bgvid.png"
+        thumbnailSrc="skillt.jpg"
         thumbnailAlt="Live Demo showcasing the use of Skilltree"
       />
     </div>
