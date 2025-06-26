@@ -3,6 +3,7 @@ import { User, LoaderPinwheel, Network } from "lucide-react";
 import { useRef } from "react";
 import { Card } from "../ui/card";
 import { Badge } from "../ui/badge";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function HowItWorks() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -27,7 +28,11 @@ export default function HowItWorks() {
         </Badge>{" "}
         prompt{" "}
       </h1>
-      <Card className="w-full    ">
+      <p className="text-muted-foreground text-lg text-center">
+        {" "}
+        Mastering something has never been easier.
+      </p>
+      <Card className="w-full relative mt-5  ">
         <div
           className="relative flex  w-full items-center justify-between max-w-full px-8"
           ref={containerRef}
@@ -132,6 +137,33 @@ export default function HowItWorks() {
             gradientStopColor="white"
           />
         </div>
+        <BorderBeam
+          size={300}
+          duration={30}
+          delay={0}
+          className="from-transparent via-purple-500  to-transparent"
+        />
+
+        <BorderBeam
+          size={300}
+          duration={30}
+          delay={7.5}
+          className="from-transparent via-blue-500  to-transparent"
+        />
+
+        <BorderBeam
+          size={300}
+          duration={30}
+          delay={15}
+          className="from-transparent via-pink-400 to-transparent"
+        />
+
+        <BorderBeam
+          size={300}
+          duration={30}
+          delay={22.5}
+          className="from-transparent via-teal-500  to-transparent"
+        />
       </Card>
     </div>
   );
