@@ -28,13 +28,13 @@ export default function HowItWorks() {
         {" "}
         Mastering something has never been easier.
       </p>
-      <Card className="w-full relative mt-5 shadow-xl  bg-neutral-100/30  ">
+      <Card className="w-full relative mt-5 border-0  shadow-none md:shadow-xl bg-neutral-950  md:bg-neutral-100/30  ">
         <div
           className="relative flex items-center justify-between max-w-full px-8"
           ref={containerRef}
         >
           <div className="flex flex-col justify-center items-center gap-1">
-            <p className="text-xs sm:text-sm text-muted-foreground tracking-tight font-medium ">
+            <p className="text-xs sm:text-sm text-white md:text-muted-foreground tracking-tight font-medium ">
               {" "}
               User input{" "}
             </p>
@@ -46,7 +46,7 @@ export default function HowItWorks() {
             </div>
           </div>
           <div className="flex flex-col justify-center gap-1 items-center">
-            <p className="text-xs sm:text-sm text-muted-foreground tracking-tight font-medium ">
+            <p className="text-xs text-white  sm:text-sm md:text-muted-foreground tracking-tight font-medium ">
               AI analysis
             </p>
             <div
@@ -86,7 +86,7 @@ export default function HowItWorks() {
             containerRef={containerRef}
             fromRef={userRef}
             toRef={aiRef}
-            duration={10}
+            duration={5}
             delay={2}
             gradientStartColor="#7dd3fc"
             gradientStopColor="#7dd3fc"
