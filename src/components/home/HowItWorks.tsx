@@ -2,7 +2,7 @@ import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import { User, LoaderPinwheel, Network } from "lucide-react";
 import { useRef } from "react";
 import { Card } from "../ui/card";
-import { Badge } from "../ui/badge";
+
 import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function HowItWorks() {
@@ -23,10 +23,7 @@ export default function HowItWorks() {
       <h1 className="font-bold tracking-tighter text-4xl  text-center text-balance mb-4">
         {" "}
         Everything you need to get started is{" "}
-        <Badge className="text-lime-500 bg-neutral-950 text-3xl text-center pr-3 font-extrabold">
-          1
-        </Badge>{" "}
-        prompt{" "}
+        <span className="text-lime-500  font-extrabold">1</span> prompt{" "}
       </h1>
       <p className="text-muted-foreground text-lg text-center">
         {" "}
