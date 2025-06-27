@@ -88,8 +88,8 @@ export default function HowItWorks() {
             toRef={aiRef}
             duration={10}
             delay={2}
-            gradientStartColor="blue"
-            gradientStopColor="blue"
+            gradientStartColor="#7dd3fc"
+            gradientStopColor="#7dd3fc"
             pathWidth={4}
           />
           <AnimatedBeam
