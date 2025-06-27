@@ -2,8 +2,7 @@ import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import { User, LoaderPinwheel, Network } from "lucide-react";
 import { useRef } from "react";
 import { Card } from "../ui/card";
-
-import { ShineBorder } from "../magicui/shine-border";
+import { BorderBeam } from "../magicui/border-beam";
 
 export default function HowItWorks() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -46,7 +45,6 @@ export default function HowItWorks() {
               <User strokeWidth={1.5} />
             </div>
           </div>
-
           <div className="flex flex-col justify-center gap-1 items-center">
             <p className="text-xs sm:text-sm text-muted-foreground tracking-tight font-medium ">
               AI analysis
@@ -58,7 +56,6 @@ export default function HowItWorks() {
               <LoaderPinwheel className="animate-spin" strokeWidth={1} />
             </div>
           </div>
-
           <div className="flex flex-col justify-center items-center gap-10">
             <div
               ref={output1Ref}
@@ -85,7 +82,6 @@ export default function HowItWorks() {
               <Network strokeWidth={1.5} />
             </div>
           </div>
-
           <AnimatedBeam
             containerRef={containerRef}
             fromRef={userRef}
@@ -96,7 +92,6 @@ export default function HowItWorks() {
             gradientStopColor="blue"
             pathWidth={4}
           />
-
           <AnimatedBeam
             containerRef={containerRef}
             fromRef={aiRef}
@@ -132,9 +127,24 @@ export default function HowItWorks() {
             delay={3}
             gradientStartColor="white"
             gradientStopColor="white"
-          />
+          />{" "}
         </div>
-        <ShineBorder shineColor={["#3b82f6", "#06b6d4", "#10b981"]} />
+
+        <BorderBeam
+          size={250}
+          duration={15}
+          delay={0}
+          colorFrom="#84cc16"
+          colorTo="#06b6d4"
+        />
+
+        <BorderBeam
+          size={250}
+          duration={15}
+          delay={7.5}
+          colorFrom="#84cc16"
+          colorTo="#06b6d4"
+        />
       </Card>
     </div>
   );
