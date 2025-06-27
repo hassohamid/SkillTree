@@ -131,19 +131,16 @@ export default function HowItWorks() {
         </div>
 
         <BorderBeam
-          size={250}
-          duration={15}
+          size={320}
+          duration={24}
           delay={0}
-          colorFrom="#84cc16"
-          colorTo="#06b6d4"
+          className="bg-[linear-gradient(90deg,transparent_0%,#84cc16_30%,#06b6d4_70%,transparent_100%)]"
         />
-
         <BorderBeam
-          size={250}
-          duration={15}
-          delay={7.5}
-          colorFrom="#84cc16"
-          colorTo="#06b6d4"
+          size={320}
+          duration={24}
+          delay={12}
+          className="bg-[linear-gradient(270deg,transparent_0%,#84cc16_30%,#06b6d4_70%,transparent_100%)]"
         />
       </Card>
     </div>
