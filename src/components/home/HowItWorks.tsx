@@ -3,7 +3,7 @@ import { User, LoaderPinwheel, Network } from "lucide-react";
 import { useRef } from "react";
 import { Card } from "../ui/card";
 
-import { BorderBeam } from "@/components/magicui/border-beam";
+import { ShineBorder } from "../magicui/shine-border";
 
 export default function HowItWorks() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -29,9 +29,9 @@ export default function HowItWorks() {
         {" "}
         Mastering something has never been easier.
       </p>
-      <Card className="w-full relative mt-5 shadow-xl bg-neutral-100/30 border-2 ">
+      <Card className="w-full relative mt-5 shadow-xl  bg-neutral-100/30  ">
         <div
-          className="relative flex  w-full items-center justify-between max-w-full px-8"
+          className="relative flex items-center justify-between max-w-full px-8"
           ref={containerRef}
         >
           <div className="flex flex-col justify-center items-center gap-1">
@@ -134,22 +134,7 @@ export default function HowItWorks() {
             gradientStopColor="white"
           />
         </div>
-
-        <BorderBeam
-          size={300}
-          duration={30}
-          delay={7.5}
-          colorTo="#84cc16"
-          className="from-transparent to-transparent"
-        />
-
-        <BorderBeam
-          size={300}
-          duration={30}
-          delay={22.5}
-          colorTo="#84cc16"
-          className="from-transparent to-transparent"
-        />
+        <ShineBorder shineColor={["#3b82f6", "#06b6d4", "#10b981"]} />
       </Card>
     </div>
   );
