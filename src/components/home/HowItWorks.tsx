@@ -32,7 +32,7 @@ export default function HowItWorks() {
         {" "}
         Mastering something has never been easier.
       </p>
-      <Card className="w-full relative mt-5 shadow-xl bg-neutral-100/30 ">
+      <Card className="w-full relative mt-5 shadow-xl bg-neutral-100/30 border-2 ">
         <div
           className="relative flex  w-full items-center justify-between max-w-full px-8"
           ref={containerRef}
@@ -142,16 +142,16 @@ export default function HowItWorks() {
           size={300}
           duration={30}
           delay={7.5}
-          colorFrom="lime"
-          colorTo="lime"
+          colorTo="#84cc16"
+          className="from-transparent to-transparent"
         />
 
         <BorderBeam
           size={300}
           duration={30}
           delay={22.5}
-          colorFrom="lime"
-          colorTo="lime"
+          colorTo="#84cc16"
+          className="from-transparent to-transparent"
         />
       </Card>
     </div>
