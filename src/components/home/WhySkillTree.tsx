@@ -1,6 +1,6 @@
 import { Card } from "../ui/card";
 import { Badge } from "../ui/badge";
-import { ArrowUp } from "lucide-react";
+import { ArrowRight, ArrowUp } from "lucide-react";
 import { Button } from "../ui/button";
 import { useState, useEffect } from "react";
 
@@ -52,17 +52,24 @@ export default function WhySkillTree() {
   }, [currentIndex, currentWordIndex, words, baseText]);
 
   return (
-    <div className="flex flex-col container mx-auto items-center mt-35 max-w-6xl ">
+    <div className="flex flex-col container mx-auto items-center mt-35 max-w-6xl  ">
       <h1 className="uppercase text-sm font-medium text-muted-foreground text-wider mb-5">
         {" "}
         Why Choose Us
       </h1>
-      <h1 className="font-bold text-balance tracking-tight text-4xl text-center mb-5">
+      <h1 className="font-bold text-balance tracking-tight text-3xl md:text4xl text-center mb-5">
         No complexity, just results.
       </h1>
-      <p className="text-lg text-center text-muted-foreground mb-5">
-        {" "}
-        Tell us your goal. Get your custom path. Skip the overwhelm.{" "}
+      <p className=" flex  gap-2  items-center text-lg text-center tracking-right font-medium text-muted-foreground/90 mb-5 px-3 ">
+        Goal{" "}
+        <span className="p-2 bg-black rounded-md">
+          <ArrowRight size={16} color="lime" />
+        </span>
+        Path{" "}
+        <span className="p-2 bg-black rounded-md">
+          <ArrowRight size={16} color="lime" />
+        </span>{" "}
+        Success
       </p>
       <div className="container max-w-3xl mx-auto px-3">
         <Card className="relative">
@@ -91,35 +98,38 @@ export default function WhySkillTree() {
             </Button>
           </div>
         </Card>{" "}
-        <Card className="mt-5">
+        <Card className="mt-5 bg-neutral-950 ">
           <div className="relative">
-            <Badge className="absolute top-3 right-6 py-2">
-              <span className="text-muted text-center font-medium border-r px-1.5 uppercase border-border/40">
+            <Badge
+              variant="outline"
+              className="absolute top-3 right-6 py-2 text-white "
+            >
+              <span className=" text-center font-normal border-r px-1.5 uppercase ">
                 step
               </span>
               2
             </Badge>
           </div>
           <div className="relative p-5">
-            <h1 className="px-2 pb-4 font-semibold tracking-tighter">
-              AI generates your custom path
+            <h1 className="px-2 pb-4 font-medium tracking-tighter text-white">
+              Generating your personalized path
             </h1>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 p-3 rounded-lg border bg-muted/30">
+              <div className="flex items-center gap-3 p-3 rounded-lg border ">
                 <div className="size-2 rounded-full bg-green-500 animate-pulse"></div>
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-muted/80">
                   Analyzing your goals...
                 </span>
               </div>
-              <div className="flex items-center gap-3 p-3 rounded-lg border bg-muted/30">
+              <div className="flex items-center gap-3 p-3 rounded-lg border ">
                 <div className="size-2 rounded-full bg-blue-500 animate-pulse"></div>
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-muted/80">
                   Finding optimal resources...
                 </span>
               </div>
-              <div className="flex items-center gap-3 p-3 rounded-lg border bg-muted/30">
+              <div className="flex items-center gap-3 p-3 rounded-lg border ">
                 <div className="size-2 rounded-full bg-purple-500 animate-pulse"></div>
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-muted/80">
                   Creating learning roadmap...
                 </span>
               </div>
@@ -137,7 +147,7 @@ export default function WhySkillTree() {
           </div>
           <div className="relative p-5">
             <h1 className="px-2 pb-4 font-semibold tracking-tighter">
-              Explore your personalized skill tree
+              Explore your personalized roadmap
             </h1>
             <div className="relative">
               <div className="flex flex-col items-center space-y-4">
