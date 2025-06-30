@@ -1,3 +1,4 @@
+import CallToAction from "@/components/home/CallToAction";
 import FAQ from "@/components/home/FAQ";
 import Hero from "@/components/home/Hero";
 import HowItWorks from "@/components/home/HowItWorks";
@@ -12,7 +13,7 @@ export default function Home() {
       <HowItWorks />
       <WhySkillTree />
       <FAQ />
-      <div className="min-h-screen"></div>
+      <CallToAction />
     </>
   );
 }

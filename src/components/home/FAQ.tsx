@@ -76,7 +76,9 @@ export default function FAQ() {
         <div className="text-foreground/80 mb-12 text-center text-sm font-medium tracking-tight mt-10">
           <h1>
             Still have questions? Email us at{" "}
-            <span className="underline">hello@skilltree.app</span>
+            <span className="underline cursor-pointer">
+              hello@skilltree.app
+            </span>
           </h1>
         </div>
       </div>
