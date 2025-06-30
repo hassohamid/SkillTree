@@ -45,7 +45,7 @@ export default function FAQ() {
     <div className="relative">
       <img
         src="grainybg.jpg"
-        className="absolute -z-99 opacity-8 object-cover h-full w-full [mask-image:linear-gradient(to_bottom,transparent,black_5%,black_95%,transparent)]"
+        className="absolute -z-99 opacity-12 object-cover h-full w-full [mask-image:linear-gradient(to_bottom,transparent,black_5%,black_95%,transparent)]"
       />
       <div className="flex flex-col container mx-auto items-center mt-35 max-w-4xl px-6 ">
         <h1 className="uppercase text-sm font-medium text-muted-foreground tracking-wider mb-5 mt-10">
