@@ -86,8 +86,8 @@ export default function HowItWorks() {
             containerRef={containerRef}
             fromRef={userRef}
             toRef={aiRef}
-            duration={5}
-            delay={2}
+            duration={2}
+            delay={3}
             gradientStartColor="#7dd3fc"
             gradientStopColor="#7dd3fc"
             pathWidth={4}
@@ -96,7 +96,7 @@ export default function HowItWorks() {
             containerRef={containerRef}
             fromRef={aiRef}
             toRef={output1Ref}
-            duration={1}
+            duration={2}
             delay={3}
             gradientStartColor="white"
             gradientStopColor="white"
@@ -105,7 +105,7 @@ export default function HowItWorks() {
             containerRef={containerRef}
             fromRef={aiRef}
             toRef={output2Ref}
-            duration={1}
+            duration={2}
             delay={3}
             gradientStartColor="white"
             gradientStopColor="white"
@@ -114,7 +114,7 @@ export default function HowItWorks() {
             containerRef={containerRef}
             fromRef={aiRef}
             toRef={output3Ref}
-            duration={1}
+            duration={2}
             delay={3}
             gradientStartColor="white"
             gradientStopColor="white"
@@ -123,7 +123,7 @@ export default function HowItWorks() {
             containerRef={containerRef}
             fromRef={aiRef}
             toRef={output4Ref}
-            duration={1}
+            duration={2}
             delay={3}
             gradientStartColor="white"
             gradientStopColor="white"
@@ -134,13 +134,13 @@ export default function HowItWorks() {
           size={320}
           duration={24}
           delay={0}
-          className="bg-[linear-gradient(90deg,transparent_0%,#84cc16_30%,#06b6d4_70%,transparent_100%)]"
+          className="hidden md:block bg-[linear-gradient(90deg,transparent_0%,#84cc16_30%,#06b6d4_70%,transparent_100%)]"
         />
         <BorderBeam
           size={320}
           duration={24}
           delay={12}
-          className="bg-[linear-gradient(270deg,transparent_0%,#84cc16_30%,#06b6d4_70%,transparent_100%)]"
+          className="hidden md:block bg-[linear-gradient(270deg,transparent_0%,#84cc16_30%,#06b6d4_70%,transparent_100%)]"
         />
       </Card>
     </div>
