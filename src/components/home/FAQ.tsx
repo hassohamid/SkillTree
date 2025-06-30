@@ -17,31 +17,23 @@ export default function FAQ() {
       answer:
         "No, we don't create our own content. Instead, we do the heavy lifting of researching and finding the absolute best resources, tutorials, and courses already available online. We're like your personal learning curator.",
     },
-    {
-      question: "How accurate are the time estimates?",
-      answer:
-        "Our time estimates are based on average learning speeds and resource lengths. Everyone learns at their own pace, so use these as guidelines. You can always adjust your schedule and mark items complete when you're ready.",
-    },
+
     {
       question: "Can I track my progress?",
       answer:
         "Absolutely! You can mark resources as complete, track your progress through each branch of your skilltree, and see how far you've come. It's designed to keep you motivated and organized.",
     },
     {
-      question: "What if I want to learn something very specific or niche?",
+      question: "What if I want to learn something very specific?",
       answer:
         "Our AI is trained to handle both popular and niche learning goals. Just describe what you want to learn as specifically as possible, and we'll find the best resources available for that exact skill or topic.",
     },
     {
       question: "Are the resources free or paid?",
       answer:
-        "We curate a mix of both free and paid resources. We'll always indicate which is which, and often include free alternatives. Our goal is to find you the best learning path regardless of budget.",
+        "We curate a mix of both free and paid resources. We'll always indicate which is which, and always include free alternatives. Our goal is to find you the best learning path regardless of budget.",
     },
-    {
-      question: "Can I modify my roadmap after it's generated?",
-      answer:
-        "Yes! Your roadmap is flexible. You can skip resources that don't fit your learning style, add notes, and even request modifications if your goals change along the way.",
-    },
+
     {
       question: "How is this different from just googling tutorials?",
       answer:
@@ -53,7 +45,7 @@ export default function FAQ() {
     <div className="relative">
       <img
         src="grainybg.jpg"
-        className="absolute -z-99 opacity-8 max-h-screen object-cover h-full w-full [mask-image:linear-gradient(to_bottom,transparent,black_5%,black_95%,transparent)]"
+        className="absolute -z-99 opacity-8 object-cover h-full w-full [mask-image:linear-gradient(to_bottom,transparent,black_5%,black_95%,transparent)]"
       />
       <div className="flex flex-col container mx-auto items-center mt-35 max-w-4xl px-6 ">
         <h1 className="uppercase text-sm font-medium text-muted-foreground tracking-wider mb-5 mt-10">
