@@ -102,11 +102,8 @@ export default function WhySkillTree() {
         </Card>{" "}
         <Card className="mt-5 bg-neutral-950 ">
           <div className="relative">
-            <Badge
-              variant="outline"
-              className="absolute top-3 right-6 py-2 text-white "
-            >
-              <span className=" text-center font-normal border-r px-1.5 uppercase ">
+            <Badge className="absolute top-3 right-6 py-2 bg-purple-600 text-white  ">
+              <span className=" text-center font-medium border-r border-border/70 px-1.5 uppercase  ">
                 step
               </span>
               2
