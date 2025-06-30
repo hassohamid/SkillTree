@@ -50,37 +50,43 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="flex flex-col container mx-auto items-center mt-35 max-w-4xl px-6">
-      <h1 className="uppercase text-sm font-medium text-muted-foreground tracking-wider mb-5">
-        FAQ
-      </h1>
-      <h1 className="font-bold text-balance tracking-tight text-4xl md:text-6xl text-center mb-10 bg-gradient-to-br from-neutral-950 from-20% to-neutral-500 bg-clip-text text-transparent">
-        Frequently Asked Questions
-      </h1>
-
-      <div className="w-full max-w-3xl">
-        <Accordion type="single" collapsible className="flex flex-col gap-2">
-          {faqs.map((faq, index) => (
-            <AccordionItem
-              key={index}
-              value={`item-${index + 1}`}
-              className="border rounded-2xl px-4 py-0.5 [&:last-child]:border-b"
-            >
-              <AccordionTrigger className="text-left font-medium">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
-      <div className="text-foreground/80 mb-12 text-center text-sm font-medium tracking-tight mt-10">
-        <h1>
-          Still have questions? Email us at{" "}
-          <span className="underline">hello@skilltree.app</span>
+    <div className="relative">
+      <img
+        src="grainybg.jpg"
+        className="absolute -z-99 opacity-8 max-h-screen object-cover h-full w-full [mask-image:linear-gradient(to_bottom,transparent,black_5%,black_95%,transparent)]"
+      />
+      <div className="flex flex-col container mx-auto items-center mt-35 max-w-4xl px-6 ">
+        <h1 className="uppercase text-sm font-medium text-muted-foreground tracking-wider mb-5 mt-10">
+          FAQ
         </h1>
+        <h1 className="font-extrabold text-balance tracking-tight text-2xl md:text-5xl text-center mb-10 bg-gradient-to-br from-neutral-950 from-20% to-neutral-500 bg-clip-text text-transparent">
+          Frequently Asked Questions
+        </h1>
+
+        <div className="w-full max-w-3xl">
+          <Accordion type="single" collapsible className="flex flex-col gap-2">
+            {faqs.map((faq, index) => (
+              <AccordionItem
+                key={index}
+                value={`item-${index + 1}`}
+                className="border rounded-2xl px-4 py-0.5 [&:last-child]:border-b bg-white"
+              >
+                <AccordionTrigger className="text-left font-medium">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className=" text-muted-foreground leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+        <div className="text-foreground/80 mb-12 text-center text-sm font-medium tracking-tight mt-10">
+          <h1>
+            Still have questions? Email us at{" "}
+            <span className="underline">hello@skilltree.app</span>
+          </h1>
+        </div>
       </div>
     </div>
   );

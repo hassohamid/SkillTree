@@ -12,6 +12,7 @@ export default function Home() {
       <HowItWorks />
       <WhySkillTree />
       <FAQ />
+      <div className="min-h-screen"></div>
     </>
   );
 }
