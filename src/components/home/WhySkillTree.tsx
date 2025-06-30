@@ -3,6 +3,8 @@ import { Badge } from "../ui/badge";
 import { ArrowRight, ArrowUp } from "lucide-react";
 import { Button } from "../ui/button";
 import { useState, useEffect } from "react";
+import { Marquee } from "@/components/magicui/marquee";
+import { SkillTreeCardExample } from "../SkillTreeCard";
 
 export default function WhySkillTree() {
   const [currentText, setCurrentText] = useState("");
@@ -136,7 +138,7 @@ export default function WhySkillTree() {
             </div>
           </div>
         </Card>
-        <Card className="mt-5">
+        <Card className="mt-5 pb-0 mb-0">
           <div className="relative">
             <Badge className="absolute top-3 right-6 py-2">
               <span className="text-muted text-center font-medium border-r px-1.5 uppercase border-border/40">
@@ -146,52 +148,14 @@ export default function WhySkillTree() {
             </Badge>
           </div>
           <div className="relative p-5">
-            <h1 className="px-2 pb-4 font-semibold tracking-tighter">
+            <h1 className="px-2 pb-4 font-semibold tracking-tighter border-b">
               Explore your personalized roadmap
             </h1>
-            <div className="relative">
-              <div className="flex flex-col items-center space-y-4">
-                <div className="flex items-center justify-center size-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 text-white font-semibold text-sm shadow-lg">
-                  Goal
-                </div>
-
-                <div className="w-px h-4 bg-border"></div>
-
-                <div className="flex items-center gap-8">
-                  <div className="flex flex-col items-center space-y-2">
-                    <div className="size-8 rounded-full bg-blue-100 border-2 border-blue-500 flex items-center justify-center">
-                      <div className="size-3 rounded-full bg-blue-500"></div>
-                    </div>
-                    <span className="text-xs text-muted-foreground">
-                      Basics
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col items-center space-y-2">
-                    <div className="size-8 rounded-full bg-yellow-100 border-2 border-yellow-500 flex items-center justify-center">
-                      <div className="size-3 rounded-full bg-yellow-500"></div>
-                    </div>
-                    <span className="text-xs text-muted-foreground">Tools</span>
-                  </div>
-
-                  <div className="flex flex-col items-center space-y-2">
-                    <div className="size-8 rounded-full bg-purple-100 border-2 border-purple-500 flex items-center justify-center">
-                      <div className="size-3 rounded-full bg-purple-500"></div>
-                    </div>
-                    <span className="text-xs text-muted-foreground">
-                      Advanced
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-4 p-3 rounded-lg bg-muted/30 border">
-                <p className="text-xs text-muted-foreground text-center">
-                  Click any node to explore resources, tutorials, and practice
-                  projects
-                </p>
-              </div>
-            </div>
+          </div>
+          <div className="w-full ">
+            <Marquee pauseOnHover>
+              <SkillTreeCardExample />
+            </Marquee>
           </div>
         </Card>
       </div>
