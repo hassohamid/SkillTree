@@ -44,7 +44,7 @@ export default function CallToAction() {
           learners who ditched tutorial hell
         </h1>
         <AvatarCircles numPeople={99} avatarUrls={avatars} />
-        <RainbowButton className="font-bold px-12 py-5 rounded-full mt-4">
+        <RainbowButton className="font-bold px-22 py-6 rounded-full mt-4">
           Try now for free
         </RainbowButton>
       </div>

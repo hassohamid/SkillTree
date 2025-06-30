@@ -4,7 +4,7 @@ import { ArrowRight, ArrowUp } from "lucide-react";
 import { Button } from "../ui/button";
 import { useState, useEffect } from "react";
 import { Marquee } from "@/components/magicui/marquee";
-import { SkillTreeCardExample } from "../SkillTreeCard";
+import { SkillTreeCardExample } from "./SkillTreeCard";
 
 export default function WhySkillTree() {
   const [currentText, setCurrentText] = useState("");
