@@ -13,8 +13,8 @@ import {
 export default function AiCard() {
   return (
     <Card className="my-5 container mx-auto max-w-6xl">
-      <CardTitle className="text-3xl font-bold tracking-tighter text-black/90">
-        just wait.
+      <CardTitle className="text-2xl font-bold tracking-tighter text-black/80">
+        Generating
       </CardTitle>
       <CardSkeletonContainer>
         <Skeleton />

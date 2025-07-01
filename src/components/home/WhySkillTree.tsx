@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input";
 import { PointerHighlight } from "../ui/pointer-highlight";
 import AiCard from "../ui/AICard";
+import { StaticRoadmap } from "../ui/StaticRoadmap";
 
 export default function WhySkillTree() {
   const placeholders = [
@@ -56,13 +57,10 @@ export default function WhySkillTree() {
         Success
       </p>
       <div className="container max-w-3xl mx-auto px-3">
-        <Card className="relative">
-          <Badge className="absolute top-3 right-6 py-2  ">
-            <span className="text-muted text-center font-medium border-r px-1.5 uppercase border-border/40">
-              step
-            </span>
+        <Card className="relative ">
+          <h1 className="absolute top-3 right-6 py-2 font-black text-3xl text-muted">
             1
-          </Badge>
+          </h1>
           <div className=" p-15">
             <h1 className=" tracking-tighter text-center text-2xl  mb-10 ">
               Tell us what you want to
@@ -83,29 +81,14 @@ export default function WhySkillTree() {
         </Card>
         <div className="relative">
           <AiCard />
-          <Badge className="absolute top-3 right-6 py-2 bg-purple-600 text-white  ">
-            <span className=" text-center font-medium border-r border-border/70 px-1.5 uppercase  ">
-              step
-            </span>
+          <h1 className="absolute top-3 right-6 py-2 font-black text-3xl text-muted-foreground/10 ">
             2
-          </Badge>
+          </h1>
         </div>
-        <Card className="mt-5 pb-0 mb-0">
-          <div className="relative">
-            <Badge className="absolute top-3 right-6 py-2">
-              <span className="text-muted text-center font-medium border-r px-1.5 uppercase border-border/40">
-                step
-              </span>
-              3
-            </Badge>
-          </div>
-          <div className="relative p-5">
-            <h1 className="px-2 pb-4 font-semibold tracking-tighter border-b">
-              Explore your personalized roadmap
-            </h1>
-          </div>
-          <div className="w-full "></div>
-        </Card>
+        <div className="relative">
+          <StaticRoadmap />
+          <div className="absolute w-full  blur-3xl md:blur3xl -z-99  bottom-0 md:bottom-50  h-[100px] bg-neutral-800" />
+        </div>
       </div>
     </div>
   );
