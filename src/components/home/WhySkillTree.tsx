@@ -1,5 +1,4 @@
 import { Card } from "../ui/card";
-import { Badge } from "../ui/badge";
 import { ArrowRight } from "lucide-react";
 import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input";
 import { PointerHighlight } from "../ui/pointer-highlight";
