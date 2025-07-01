@@ -45,8 +45,7 @@ export default function Testimonials() {
         {" "}
         <span className="text-green-400">Happy</span> users
       </h1>
-      <AnimatedTestimonials testimonials={testimonials} />
-      <div className="bg-gradient-to-t from-blue-200 to-green-500 to-95% absolute h-[300px] w-full bottom-90  blur-3xl rounded-t-full   opacity-35 sm:opacity-15 sm:bottom-40  "></div>
+      <AnimatedTestimonials autoplay testimonials={testimonials} />
     </div>
   );
 }

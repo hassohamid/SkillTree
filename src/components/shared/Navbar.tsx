@@ -28,7 +28,7 @@ export default function Navbar() {
       </div>
       <header
         className={cn(
-          " sticky h-20 z-20  transition-all duration-300 bg-transparent   ",
+          " sticky h-20 z-999  transition-all duration-300 bg-transparent   ",
           scrolled ? "top-5 px-6" : "top-0 border-0"
         )}
       >
