@@ -196,17 +196,17 @@ export default function Footer() {
           <div className="flex items-center gap-6 text-xs text-muted-foreground">
             <a
               href="#"
-              className="group flex items-center gap-1 hover:text-foreground transition-colors"
+              className=" flex items-center gap-1 hover:text-foreground transition-colors"
             >
               Privacy Policy
-              <ArrowRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
+            
             </a>
             <a
               href="#"
-              className="group flex items-center gap-1 hover:text-foreground transition-colors"
+              className="flex items-center gap-1 hover:text-foreground transition-colors"
             >
               Terms of Service
-              <ArrowRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
+             
             </a>
           </div>
         </div>
