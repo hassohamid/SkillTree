@@ -1,63 +1,45 @@
 import { Card } from "../ui/card";
 import { Badge } from "../ui/badge";
-import { ArrowRight, ArrowUp } from "lucide-react";
-import { Button } from "../ui/button";
-import { useState, useEffect } from "react";
-import { Marquee } from "@/components/magicui/marquee";
-import { SkillTreeCardExample } from "./SkillTreeCard";
+import { ArrowRight } from "lucide-react";
+import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input";
+import { PointerHighlight } from "../ui/pointer-highlight";
+import AiCard from "../ui/AICard";
 
 export default function WhySkillTree() {
-  const [currentText, setCurrentText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-
-  const baseText = "I want to become a ";
-  const words = [
+  const placeholders = [
     "Full-Stack Developer",
-    "Graphic Designer",
-    "Digital Marketer",
-    "Content Creator",
-    "Video Editor",
-    "Social Media Manager",
-    "Freelance Writer",
-    "UI/UX Designer",
-    "Photographer",
-    "Music Producer",
-    "Voice Actor",
-    "Travel Blogger",
-    "YouTube Creator",
-    "Copywriter",
-    "E-commerce Expert",
-    "SEO Specialist",
-    "Online Coach",
-    "Podcast Host",
+    "Learn React and Node.js",
+    "Master digital marketing",
+    "Become a UX Designer",
+    "Learn Python programming",
+    "Social media marketing",
+    "Photography basics",
+    "Video editing skills",
+    "Graphic design fundamentals",
+    "Data science with Python",
+    "Mobile app development",
+    "Content creation",
+    "SEO and copywriting",
+    "Learn Figma and design",
+    "Freelance writing",
+    "Web development bootcamp",
+    "Machine learning basics",
+    "Start a YouTube channel",
   ];
 
-  useEffect(() => {
-    const currentWord = words[currentWordIndex];
-    const fullText = baseText + currentWord;
-
-    if (currentIndex < fullText.length) {
-      const timeout = setTimeout(() => {
-        setCurrentText(fullText.slice(0, currentIndex + 1));
-        setCurrentIndex(currentIndex + 1);
-      }, 50);
-      return () => clearTimeout(timeout);
-    } else {
-      const timeout = setTimeout(() => {
-        setCurrentIndex(0);
-        setCurrentText("");
-        setCurrentWordIndex((prev) => (prev + 1) % words.length);
-      }, 2000);
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, currentWordIndex, words, baseText]);
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(e.target.value);
+  };
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("submitted");
+  };
 
   return (
     <div className="flex flex-col container mx-auto items-center mt-35 max-w-6xl  ">
       <h1 className="uppercase text-sm font-medium text-muted-foreground text-wider mb-5">
         {" "}
-        Why Choose Us
+        How It Works
       </h1>
       <h1 className="font-bold text-balance tracking-tight text-3xl md:text4xl text-center mb-5">
         No complexity, just results.
@@ -81,60 +63,33 @@ export default function WhySkillTree() {
             </span>
             1
           </Badge>
-
-          <div className="relative p-5">
-            <h1 className="px-2 pb-2 font-semibold tracking-tighter ">
-              What would you like to learn?
+          <div className=" p-15">
+            <h1 className=" tracking-tighter text-center text-2xl  mb-10 ">
+              Tell us what you want to
+              <PointerHighlight
+                rectangleClassName="bg-blue-100 border-blue-300 "
+                pointerClassName="text-blue-500 h-3 w-3"
+                containerClassName="inline-block mx-1"
+              >
+                <span className=" relative z-10">learn</span>
+              </PointerHighlight>
             </h1>
-            <textarea
-              className="w-full min-h-[180px] resize-none rounded-xl border border-border bg-background px-5 py-5 pr-12 text-sm text-muted-foreground  pointer-events-none"
-              rows={3}
-              value={currentText}
-              readOnly
+            <PlaceholdersAndVanishInput
+              onChange={handleChange}
+              onSubmit={onSubmit}
+              placeholders={placeholders}
             />
-            <Button
-              variant="secondary"
-              className="absolute right-10 bottom-10 p-2 rounded-full transition-colors"
-            >
-              <ArrowUp size={16} />
-            </Button>
-          </div>
-        </Card>{" "}
-        <Card className="mt-5 bg-neutral-950 ">
-          <div className="relative">
-            <Badge className="absolute top-3 right-6 py-2 bg-purple-600 text-white  ">
-              <span className=" text-center font-medium border-r border-border/70 px-1.5 uppercase  ">
-                step
-              </span>
-              2
-            </Badge>
-          </div>
-          <div className="relative p-5">
-            <h1 className="px-2 pb-4 font-medium tracking-tighter text-white">
-              Generating your personalized path
-            </h1>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 p-3 rounded-lg border ">
-                <div className="size-2 rounded-full bg-green-500 animate-pulse"></div>
-                <span className="text-sm text-muted/80">
-                  Analyzing your goals...
-                </span>
-              </div>
-              <div className="flex items-center gap-3 p-3 rounded-lg border ">
-                <div className="size-2 rounded-full bg-blue-500 animate-pulse"></div>
-                <span className="text-sm text-muted/80">
-                  Finding optimal resources...
-                </span>
-              </div>
-              <div className="flex items-center gap-3 p-3 rounded-lg border ">
-                <div className="size-2 rounded-full bg-purple-500 animate-pulse"></div>
-                <span className="text-sm text-muted/80">
-                  Creating learning roadmap...
-                </span>
-              </div>
-            </div>
           </div>
         </Card>
+        <div className="relative">
+          <AiCard />
+          <Badge className="absolute top-3 right-6 py-2 bg-purple-600 text-white  ">
+            <span className=" text-center font-medium border-r border-border/70 px-1.5 uppercase  ">
+              step
+            </span>
+            2
+          </Badge>
+        </div>
         <Card className="mt-5 pb-0 mb-0">
           <div className="relative">
             <Badge className="absolute top-3 right-6 py-2">
@@ -149,11 +104,7 @@ export default function WhySkillTree() {
               Explore your personalized roadmap
             </h1>
           </div>
-          <div className="w-full ">
-            <Marquee pauseOnHover>
-              <SkillTreeCardExample />
-            </Marquee>
-          </div>
+          <div className="w-full "></div>
         </Card>
       </div>
     </div>
