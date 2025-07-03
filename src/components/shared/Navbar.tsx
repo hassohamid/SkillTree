@@ -36,7 +36,7 @@ export default function Navbar() {
           className={cn(
             "flex justify-between container mx-auto  transition-all duration-600 rounded-2xl  ",
             scrolled
-              ? "bg-background/75 backdrop-blur-lg shadow-lg max-w-5xl py-4 px-5 border-1 "
+              ? "bg-background/75 backdrop-blur-md shadow-lg max-w-5xl py-4 px-5 border-1 border-white/20 "
               : "bg-transparent max-w-7xl py-4 px-8 border-0 shadow-none backdrop-blur-none "
           )}
         >
